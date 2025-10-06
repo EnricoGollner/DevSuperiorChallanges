@@ -20,6 +20,11 @@ public class Categoria {
 
     public Categoria() {}
 
+    public Categoria(Integer id, String descricao) {
+        this.id = id;
+        this.descricao = descricao;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -40,9 +45,6 @@ public class Categoria {
         return atividades;
     }
 
-    public void setAtividades(List<Atividade> atividades) {
-        this.atividades = atividades;
-    }
 
     @Override
     public boolean equals(Object o) {
